@@ -9,7 +9,7 @@ import {
 import { EditorState } from "@codemirror/basic-setup";
 import { EditorView } from "@codemirror/view";
 
-type EditorStateConfig = Parameters<typeof EditorState.create>[0];
+export type EditorStateConfig = Parameters<typeof EditorState.create>[0];
 
 @Component({
   selector: "ngx-codemirror",
