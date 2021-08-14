@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "build": "npm run-script ng build ngx-codemirror6",
+    "build": "npm run-script ng build",
     "ng": "ng"
   },
   "repository": {
