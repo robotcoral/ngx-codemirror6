@@ -12,7 +12,7 @@ import { EditorView } from "@codemirror/view";
 type EditorStateConfig = Parameters<typeof EditorState.create>[0];
 
 @Component({
-  selector: "codemirror",
+  selector: "ngx-codemirror",
   template: `<div #codemirrorhost></div>`,
 })
 export class CodeMirrorComponent implements AfterViewInit {
