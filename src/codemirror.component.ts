@@ -13,7 +13,14 @@ export type EditorStateConfig = Parameters<typeof EditorState.create>[0];
 
 @Component({
   selector: "ngx-codemirror",
-  template: `<div #codemirrorhost></div>`,
+  template: `<div #codemirrorhost class="codemirrorhost"></div>`,
+  styles: [
+    `
+      .codemirrorhost {
+        height: 100%;
+      }
+    `,
+  ],
 })
 export class CodeMirrorComponent implements AfterViewInit {
   @Input() config: EditorStateConfig;
