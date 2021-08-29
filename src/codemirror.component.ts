@@ -5,6 +5,7 @@ import {
   Input,
   Output,
   ViewChild,
+  ViewEncapsulation,
 } from "@angular/core";
 import { EditorState } from "@codemirror/basic-setup";
 import { EditorView } from "@codemirror/view";
@@ -21,6 +22,7 @@ export type EditorStateConfig = Parameters<typeof EditorState.create>[0];
       }
     `,
   ],
+  encapsulation: ViewEncapsulation.None,
 })
 export class CodeMirrorComponent implements AfterViewInit {
   @Input() config: EditorStateConfig;
